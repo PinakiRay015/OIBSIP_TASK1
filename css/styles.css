@@ -1,0 +1,440 @@
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #edede9;
+}
+
+.header h3
+{
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.header i
+{
+    font-size: 2.4rem;
+    display: none;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+}
+
+#check
+{
+    display: none;
+}
+
+.header #check:checked~ul{
+    right: 0%;
+    transition: all 0.5s ease-in-out;
+}
+
+.header #check:not(:checked)~ul{
+    right: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header li {
+    margin: 0em 1.3em;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.header li:hover
+{
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+#log{
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#logbtn{
+    height: 3.2rem;
+    padding: 0rem 2rem;
+    cursor: pointer;
+}
+
+button {
+    margin-left: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0em 0.6em;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+}
+
+.hero
+{
+    display: flex;
+    background-color: #edede9;
+    padding: 2em;   
+}
+
+.herosec
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.herosec img
+{
+    width: 479px;
+}
+
+.herosec #sec1
+{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.submit
+{
+    display: flex;
+    margin-top: 3em;
+}
+
+.submit button
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.submit input
+{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.2rem;
+}
+
+input[type="text"] {
+    width: 12em;
+    border-radius: 0.5em;
+    height: 3em;
+    outline: none;
+    border: 0.5px solid #00000061;
+}
+
+.heading h1
+{
+    font-family: 'Cabin', sans-serif;
+    font-size: 3rem;
+}
+ .para
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #6c757d;
+}
+
+ .tick span
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #6c757d;
+}
+
+.tick i
+{
+    margin-right: 10px;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3%;
+}
+
+img {
+    width: 7%;
+}
+
+.hero2
+{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    background-color: #edede9;
+    border-radius: 0.5rem;
+}
+
+.hero2 img
+{
+    width: 80%;
+}
+
+.hero2 .herosec2
+{
+    display: flex;
+    align-items: center;
+    margin: 120px;
+}
+
+.herosec2 h2
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+.herosec2 a
+{
+    color: brown;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.herosec2 p
+{
+    color: #6c757d;
+    font-family: 'Cabin', sans-serif;
+}
+
+
+.text
+{
+    display: flex;
+    align-items: center;
+    margin: 0rem 9rem;
+}
+
+.text #textmsg
+{
+    margin-top: -7rem;
+}
+
+#textmsg h2
+{
+    font-family: 'Cabin', sans-serif;
+    font-size: 2rem;
+}
+
+#textmsg p
+{
+    font-family: 'Cabin', sans-serif;
+    color: #6c757d;
+}
+
+#textmsg a
+{
+    color: brown;
+    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
+}
+
+.text img
+{
+    width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Cabin';
+    flex-wrap: wrap;
+}
+
+div#fbox1 {
+    width: 28%;
+}
+
+.fbox p , li {
+    color: grey;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+
+.fbox h3 {
+    font-size: 1.5rem;
+}
+
+
+@media (max-width:1190px) and (min-width:980px)
+{
+    .herosec
+    {
+        display: grid;
+        grid-template-areas: 'b2 b2 b2 b2'
+        'b1 b1 b1 b1';
+    }
+
+    .herosec #sec1
+    {
+        grid-area: b1;
+        width: 100%;
+    }
+
+    .herosec #sec2
+    {
+        grid-area: b2;
+    }
+
+    .herosec img{
+        width: 100%;
+    }
+
+    .hero2{
+        display: grid;
+        grid-template-areas: 'b4 b4 b4 b4'
+        'b3 b3 b3 b3';
+    }
+
+    .hero2 .herosec2{
+        grid-area: b3;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .hero2 img{
+        grid-area: b4;
+        width: 100%;
+    }
+
+    .text
+    {
+        display: grid;
+        grid-template-areas: 'b6 b6 b6 b6'
+        'b5 b5 b5 b5';
+    }
+
+    .text #textimg
+    {
+        grid-area: b5;
+        width: 100%;
+    }
+
+    .text #textmsg
+    {
+        grid-area: b6;
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width:980px)
+{
+
+    .herosec
+    {
+        display: grid;
+        grid-template-areas: 'b2 b2 b2 b2'
+        'b1 b1 b1 b1';
+    }
+
+    .herosec #sec1
+    {
+        grid-area: b1;
+        width: 100%;
+    }
+
+    .herosec #sec2
+    {
+        grid-area: b2;
+    }
+
+    .herosec img{
+        width: 100%;
+    }
+
+    .hero2{
+        display: grid;
+        grid-template-areas: 'b4 b4 b4 b4'
+        'b3 b3 b3 b3';
+    }
+
+    .hero2 .herosec2{
+        grid-area: b3;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .hero2 img{
+        grid-area: b4;
+        width: 100%;
+    }
+
+    .text
+    {
+        display: grid;
+        grid-template-areas: 'b6 b6 b6 b6'
+        'b5 b5 b5 b5';
+    }
+
+    .text #textimg
+    {
+        grid-area: b5;
+        width: 100%;
+    }
+
+    .text #textmsg
+    {
+        grid-area: b6;
+        margin-top: 0rem;
+    }
+
+    .header ul{
+        position: absolute;
+        display: block;
+        top: 76px;
+        width: 100%;
+        background-color: #000000d1;
+    }
+
+    .header li
+    {
+        line-height: 4rem;
+    }
+
+    .header i
+    {
+        display: block;
+        font-size: 1.4rem;
+    }
+
+    .header h3{
+        font-size: 1.4rem;
+    }
+
+    #log
+    {
+        font-size: 1.4rem;
+    }
+
+    #logbtn {
+        height: 3rem;
+        padding: 0rem 1rem;
+        cursor: pointer;
+    }
+
+    button{
+        font-size: 1rem;
+    }
+
+    .text{
+        margin: 2rem 3rem;
+    }
+}
